@@ -183,6 +183,20 @@
               </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/07/22/hello-world/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/07/22/hello-world/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -330,7 +344,6 @@
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-
 <script src="/js/utils.js"></script>
 
 <script src="/js/motion.js"></script>
@@ -364,5 +377,90 @@
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      enableQQ: true,
+      boolean: true,
+      verify     : false,
+      notify     : false,
+      appId      : '0FaUr3nilTP1ead2P5H5AORu-gzGzoHsz',
+      appKey     : 'sndvMa8rhW6Cn0LASXu7QPhX',
+      placeholder: "昵称填写qq可以显示qq头像和昵称哦~",
+      avatar     : 'monsterid',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : '',
+      requiredFields: ['nick','mail'], //设置必填项
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/nvnaa/CDN@1.11/emoji/', 
+      emojiMaps: {
+	"吃手手": "0fb5f6c7af48f7b1d5d3b27770f39361_2_2_art.PNG",
+	"喵喵": "1d1bcf18bc75aae0ff04e7d2eb7a7746_2_2_art.PNG",
+	"恰柠檬": "4ab5e520dea2b5c88278872799a39b40_2_2_art.PNG",
+	"1米8": "5d827da59fca80184afd039608b77385_2_2_art.PNG",
+	"顶锅": "6aa04767f3ddbe10ff5356d92dbf7aa6_2_2_art.PNG",
+	"嘉人们": "7b057410b1b9321bd02976e5c389b48d_2_2_art.PNG",
+	"mua": "7ceb81f244e0c897b8a3e1728309793a_2_2_art.PNG",
+	"wink": "8d5a59f6a16642406fe1e88e89c2e418_2_2_art.PNG",
+	"流口水": "9df5ab7cda6c2773c535c470a3897497_2_2_art.PNG",
+	"电你": "9f80024169f258fa98e87e4a60ad1948_2_2_art.PNG",
+	"加油": "9fe7b1c68d6219f0af3cb8f1384e18bd_2_2_art.PNG",
+	"不": "23efc82d3cf62c35153e758d52466cfe_2_2_art.PNG",
+	"尴尬": "86eff215399f7e2e3a20dc9d937a2874_2_2_art.PNG",
+	"绷不住": "95c4570ea8b19546dd6657eaed010b4e_2_2_art.PNG",
+	"番茄炒蛋拳": "7522e839bca03c9cf222229e4d6cedd9_2_2_art.PNG",
+	"大锤": "8652c0ee2048f021a7638b15a2a718e7_2_2_art.PNG",
+	"YYDS": "28573b6ae0f8c82be26da0b304875a42_2_2_art.PNG",
+	"哭": "979264a4ba130431e353e8671cb37647_2_2_art.PNG",
+	"震惊": "5744796a0f826eaf6448c6d7ed961eea_2_2_art.PNG",
+	"悲伤": "7221241aa93afb2b71c174e0c10d8ecb_2_2_art.PNG",
+	"睡觉": "b53a6e8b4a5406f4f659310124684f1a_2_2_art.PNG",
+	"原来如此": "b79a8ec054322157630b7ce5ceb3c0be_2_2_art.PNG",
+	"点赞": "b331ebbab26bc13457c18456af3c3ff3_2_2_art.PNG",
+	"疑问": "b353a8a4cb2e53840f043d53e8ba6b42_2_2_art.PNG",
+	"吐口水": "b897574a5b67c1be39ab585f08d813dd_2_2_art.PNG",
+	"给心心": "bca3ef04e5a138f5b96009024f2bc1e4_2_2_art.PNG",
+	"委屈": "c0a5d75c0fe319ffbf3631901477660a_2_2_art.PNG",
+	"安详": "cd3e5e955fa145a929bccd8f59677539_2_2_art.PNG",
+	"干饭": "cff9b223522e16dd595d28a54d69ec00_2_2_art.PNG",
+	"渴望": "dad438f92473216cbb750730293755e1_2_2_art.PNG",
+	"好耶": "e28c2b672fcf2ee56662b327dd5b9ad9_2_2_art.PNG",
+	"idea": "e54eeb2fd20ed52ad7dff4da12ef695d_2_2_art.PNG",
+	"生气": "ee3e0edd23799020a212014c97f8b2ab_2_2_art.PNG",
+	"耶": "ee407d1b77fc261bc5c07286e9677b1f_2_2_art.PNG",
+	"糖果": "f63f9e5c4e118a176f249f96fbc41d80_2_2_art.PNG",
+       	 // ... 更多表情
+      }
+    });
+  }, window.Valine);
+});
+</script>
+<!-- 评论框美化 -->
+<style>
+    .v .veditor{min-height: 10rem;
+        background-image: url(https://cdn.jsdelivr.net/gh/nvnaa/CDN@1.10/gif/xinxin.gif) !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: right !important;
+        background-color: rgba(255,255,255,0) !important;
+        resize: none !important;}
+    .vemoji{
+        max-width:100px !important;
+     }
+    .v[data-class=v] .vwrap .vemojis i {
+       display: inline !important;
+     }
+</style>
 </body>
 </html>
