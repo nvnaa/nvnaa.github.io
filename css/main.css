@@ -379,6 +379,31 @@ td {
   top: -5px;
   transform: rotate(45deg);
 }
+.highlight-container {
+  position: relative;
+}
+.highlight-container:hover .copy-btn,
+.highlight-container .copy-btn:focus {
+  opacity: 1;
+}
+.copy-btn {
+  color: #333;
+  cursor: pointer;
+  line-height: 1.6;
+  opacity: 0;
+  padding: 2px 6px;
+  position: absolute;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  font-size: 0.8125em;
+  right: 4px;
+  top: 8px;
+}
 .highlight,
 pre {
   background: #f7f7f7;
@@ -1165,7 +1190,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffedad;
+  background: #b86740;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2399,4 +2424,28 @@ embed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+body {
+  background: url("/images/bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+.post-block {
+  padding: 40px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: $box-shadow-inner;
+  border-radius: $border-radius-inner;
+}
+.comments {
+  padding: 40px;
+  margin: initial;
+  margin-top: sboffset;
+  background: rgba(255,255,255,0.9);
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+.header-inner {
+  opacity: 0.8;
 }
