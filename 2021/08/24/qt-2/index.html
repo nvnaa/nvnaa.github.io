@@ -20,26 +20,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="1.三种基类 qt有三种基类选择：QWidget,QMainWindow,Qdialog。QWidget是一个最简单的窗口，他是QMainWindow,Qdialog的父类，QMainWindow额外包含侧边栏和底边栏，Qdialog则额外包含对话框，选择框。">
+  <meta name="description" content="1.上期回顾">
 <meta property="og:type" content="article">
-<meta property="og:title" content="qt学习记录1">
-<meta property="og:url" content="http://example.com/2021/08/20/qt-1/index.html">
+<meta property="og:title" content="qt学习记录2">
+<meta property="og:url" content="http://example.com/2021/08/24/qt-2/index.html">
 <meta property="og:site_name" content="nvn&#39;s Blog">
-<meta property="og:description" content="1.三种基类 qt有三种基类选择：QWidget,QMainWindow,Qdialog。QWidget是一个最简单的窗口，他是QMainWindow,Qdialog的父类，QMainWindow额外包含侧边栏和底边栏，Qdialog则额外包含对话框，选择框。">
+<meta property="og:description" content="1.上期回顾">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/ef8346ef54a74718a17f6c35002aec6a.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/428640976951476b960f0531200a36ea.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/522755058b6443a3b03a1203d202fcf6.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/753cd77849234278b1d7100b358ed427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/8d3f3828d7d149a795f8508e7eca9208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70">
-<meta property="article:published_time" content="2021-08-20T02:46:25.000Z">
-<meta property="article:modified_time" content="2021-08-24T08:27:05.368Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2d3993e2cd0a4e52a58896ec9712409f.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2021-08-24T07:55:29.000Z">
+<meta property="article:modified_time" content="2021-08-24T08:23:07.884Z">
 <meta property="article:author" content="nvn">
 <meta property="article:tag" content="qt">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/ef8346ef54a74718a17f6c35002aec6a.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2d3993e2cd0a4e52a58896ec9712409f.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70">
 
-<link rel="canonical" href="http://example.com/2021/08/20/qt-1/">
+<link rel="canonical" href="http://example.com/2021/08/24/qt-2/">
 
 
 <script id="page-configurations">
@@ -52,7 +48,7 @@
   };
 </script>
 
-  <title>qt学习记录1 | nvn's Blog</title>
+  <title>qt学习记录2 | nvn's Blog</title>
   
 
 
@@ -186,7 +182,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/20/qt-1/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/24/qt-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -199,7 +195,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          qt学习记录1
+          qt学习记录2
         </h1>
 
         <div class="post-meta">
@@ -208,16 +204,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-08-20 10:46:25" itemprop="dateCreated datePublished" datetime="2021-08-20T10:46:25+08:00">2021-08-20</time>
+              <time title="创建时间：2021-08-24 15:55:29 / 修改时间：16:23:07" itemprop="dateCreated datePublished" datetime="2021-08-24T15:55:29+08:00">2021-08-24</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-24 16:27:05" itemprop="dateModified" datetime="2021-08-24T16:27:05+08:00">2021-08-24</time>
-              </span>
 
           
   
@@ -228,8 +218,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/08/20/qt-1/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/08/20/qt-1/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/08/24/qt-2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/08/24/qt-2/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -244,95 +234,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>1.三种基类</p>
-<p>qt有三种基类选择：QWidget,QMainWindow,Qdialog。QWidget是一个最简单的窗口，他是QMainWindow,Qdialog的父类，QMainWindow额外包含侧边栏和底边栏，Qdialog则额外包含对话框，选择框。</p>
-<span id="more"></span>
-
-<p>2.main函数简介</p>
-<p>QApplication a应用程序对象，有且仅有一个</p>
-<p>myWidget w 实例化窗口对象</p>
-<p>w.show() 调用show函数 显示窗口</p>
-<p>return a.exec() 让应用程序对象进入消息循环机制中，代码阻塞直至用户点击退出按钮</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;mywidget.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;QApplication&gt;</span> <span class="comment">//包含一个应用程序类的头文件</span></span></span><br><span class="line"><span class="comment">//main程序入口 argc命令行变量的数量 argv命令行变量的数组</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//a应用程序对象，在Qt中，应用程序对象，有且仅有一个</span></span><br><span class="line">    <span class="function">QApplication <span class="title">a</span><span class="params">(argc, argv)</span></span>;</span><br><span class="line">    <span class="comment">//窗口对象 mywidget父类 -&gt; QWidget</span></span><br><span class="line">    myWidget w;</span><br><span class="line">    <span class="comment">//窗口对象 默认不会显示，必须要调用show方法显示窗口</span></span><br><span class="line">    w.<span class="built_in">show</span>();</span><br><span class="line">    <span class="comment">//让应用程序对象进入消息循环，直至用户点击关闭按钮</span></span><br><span class="line">    <span class="keyword">return</span> a.<span class="built_in">exec</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>3.工程文件介绍</p>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">QT</span>       <span class="string">+= core gui  //qt包含的模块</span></span><br><span class="line"></span><br><span class="line"><span class="meta">greaterThan(QT_MAJOR_VERSION,</span> <span class="string">4): QT += widgets //大于4版本以上 包含widget模块</span></span><br><span class="line"></span><br><span class="line"><span class="attr">CONFIG</span> <span class="string">+= c++11</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"># You can make your code fail to compile if it uses deprecated APIs.</span></span><br><span class="line"><span class="comment"># In order to do so, uncomment the following line.</span></span><br><span class="line"><span class="comment">#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0</span></span><br><span class="line"></span><br><span class="line"><span class="attr">SOURCES</span> <span class="string">+= \       //源文件</span></span><br><span class="line">    <span class="meta">main.cpp</span> <span class="string">\</span></span><br><span class="line"><span class="string">    mywidget.cpp</span></span><br><span class="line"></span><br><span class="line"><span class="attr">HEADERS</span> <span class="string">+= \       //头文件</span></span><br><span class="line">    <span class="attr">mywidget.h</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment"># Default rules for deployment.</span></span><br><span class="line"><span class="attr">qnx</span>: <span class="string">target.path = /tmp/$$&#123;TARGET&#125;/bin</span></span><br><span class="line"><span class="attr">else</span>: <span class="string">unix:!android: target.path = /opt/$$&#123;TARGET&#125;/bin</span></span><br><span class="line"><span class="comment">!isEmpty(target.path): INSTALLS += target</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>TARGET= xxxx 目标生成的exe程序的名称</p>
-<p>TEMPLATE=app 模板 应用程序模板 Application</p>
-<p><img src="https://img-blog.csdnimg.cn/ef8346ef54a74718a17f6c35002aec6a.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70" alt="模块介绍"></p>
-<p>4.按钮控件常用api</p>
-<p>​    4.1创建QPushButton *Btn = new QPushButton</p>
-<p>​    4.2设置父亲 setParent(this)</p>
-<p>​    4.3设置文本 setText(“文字”)</p>
-<p>​    4.4设置位置 move(宽，高)</p>
-<p>​    4.5重新指定窗口大小 resize</p>
-<p>​    4.6设置窗口标题 setWindowTitle</p>
-<p>​    4.7设置窗口固定大小setFixedSize</p>
-<p><img src="https://img-blog.csdnimg.cn/428640976951476b960f0531200a36ea.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70" alt="对象树"></p>
-<p>5.对象树</p>
-<p>​    5.1当创建的对象在堆区时候，如果指定的父亲是QObject派生下来的类或者QObject子类派生下来的类，可以不用管理释放的操作，将对象会放入到对象树中。</p>
-<p>​    5.2一定程度上简化了内存回收机制。</p>
-<p>6.Qt中的坐标系</p>
-<p>​    6.1 左上角为0,0点</p>
-<p>​    6.2 x以右为正方向</p>
-<p>​    6.3 y以下为正方向</p>
-<p><img src="https://img-blog.csdnimg.cn/522755058b6443a3b03a1203d202fcf6.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70" alt="信号和槽"></p>
-<p>7.信号和槽</p>
-<p>​    7.1连接函数 connect</p>
-<p><img src="https://img-blog.csdnimg.cn/753cd77849234278b1d7100b358ed427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70" alt="连接"></p>
-<p>​    7.2参数</p>
-<p>​        7.2.1参数1 信号的发送者</p>
-<p>​        7.2.2参数2 发送的信号</p>
-<p>​        7.2.3参数3 信号的接收者</p>
-<p>​        7.2.4参数4 处理的槽函数</p>
-<p>​    7.3 松散耦合</p>
-<p>​    7.4 实现点击按钮关闭窗口的案例</p>
-<p>​    7.5 connect(btn,&amp;QPushButton::click,this,&amp;QWidget::close);</p>
-<p><img src="https://img-blog.csdnimg.cn/8d3f3828d7d149a795f8508e7eca9208.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70" alt="连接2"></p>
-<p>8.自定义信号和槽</p>
-<p>​    8.1自定义信号</p>
-<p>​        8.1.1写到signals下</p>
-<p>​        8.1.2返回void</p>
-<p>​        8.1.3 需要声明，不需要实现</p>
-<p>​        8.1.4可以有参数，可以重载</p>
-<p>​    8.2自定义槽函数</p>
-<p>​        8.2.1 返回void</p>
-<p>​        8.2.2 需要声明，也需要实现</p>
-<p>​        8.2.3 可以有参数，可以重载</p>
-<p>​        8.2.4 写到public slot下或者pubilc或者全局函数</p>
-<p>​    8.3触发自定义的信号</p>
-<p>​        8.3.1 emit 自定义信号</p>
-<p>​    8.4案例下课后，老师触发饿了信号，学生响应信号，请客吃饭</p>
-<p>9 当自定义信号和槽出现重载</p>
-<p>​    9.1 需要利用函数指针 明确指向函数的地址</p>
-<p>​    9.2 void(Teacher:: *tSignal)(QString) = &amp;Teacher::hungry;</p>
-<p>​    9.3 QString 转成 char *</p>
-<p>​        9.3.1 .Toutf8()转为QByteArray</p>
-<p>​        9.3.2 .Data()转为Char*</p>
-<p>​    9.4信号可以链接信号</p>
-<p>​    9.5断开信号 disconnect</p>
-<p>10.拓展</p>
-<p>​    10.1.信号是可以连接信号</p>
-<p>​    10.2.一个信号可以连接多个槽函数</p>
-<p>​    10.3.多个信号 可以连接 同一个槽函数</p>
-<p>​    10.4.信号和槽函数的参数 必须类型一一对应</p>
-<p>​    10.5.信号和槽的参数个数 是不是要一致？信号的参数个数 可以多于槽函数个数</p>
-<p>​    10.6信号槽可以断开连接 disconnect</p>
-<p>11.qt4 版本写法</p>
-<p>​    11.1 connect(信号的发送者，发送的信号 SIGNAL(信号),信号接收者，槽函数SLOT)</p>
-<p>​    11.2优点参数直观</p>
-<p>​    11.3确定 编译器不会检测参数类型</p>
-<p>12.lambda表达式</p>
-<p>​    12.1[]标识符 匿名函数</p>
-<p>​        12.1.1 =值传递</p>
-<p>​        12.1.2 &amp;引用传递</p>
-<p>​    12.2 ()参数</p>
-<p>​    12.3 {}实现体</p>
-<p>​    12.4 mutable 修饰 值传递变量，可以修改拷贝出的数据，改变不了本体</p>
-<p>​    12.5返回值<a href=""></a>-&gt;int {}</p>
-<p>小练习</p>
-<p>点击open打开另外一个界面，点击close关闭界面</p>
+        <p>1.上期回顾</p>
+<p><img src="https://img-blog.csdnimg.cn/2d3993e2cd0a4e52a58896ec9712409f.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTY1NTc5,size_16,color_FFFFFF,t_70" alt="sss"></p>
 
     </div>
 
@@ -351,13 +254,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/07/22/hello-world/" rel="prev" title="nvn">
-      <i class="fa fa-chevron-left"></i> nvn
+    <a href="/2021/08/20/qt-1/" rel="prev" title="qt学习记录1">
+      <i class="fa fa-chevron-left"></i> qt学习记录1
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/08/24/qt-2/" rel="next" title="qt学习记录2">
-      qt学习记录2 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
