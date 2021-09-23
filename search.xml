@@ -16,6 +16,8 @@
 <p>​        1.1.3 QMenu * fileMenu = bar -&gt;addMenu(“文件”) 创建菜单</p>
 <p>​        1.1.4QAction * newAction =fileMenu -&gt;addAction(“新建”);</p>
 <p>​        1.1.5添加分割线 fileMenu -&gt;addSeparator();</p>
+<span id="more"></span>
+
 <p>​    1.2工具栏可以有多个</p>
 <p>​        1.2.1 QToolBar *toolbar = newQToolBar(this)</p>
 <p>​        1.2.2 addToolBar(默认停靠区域,toolbar); Qt::LeftToolBarArea</p>
