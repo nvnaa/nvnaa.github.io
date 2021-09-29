@@ -7,6 +7,19 @@
 ]]></content>
   </entry>
   <entry>
+    <title>algorithm-1</title>
+    <url>/2021/09/23/algorithm-1/</url>
+    <content><![CDATA[<p>1.sort()</p>
+<p>​    sort函数是用来排序的函数，使用前必须加上头文件<code>#include&lt;algorithm&gt;</code>和<code>using name std;</code>使用方式如下：sort(首元素地址(必填),尾元素地址的下一个地址(必填),比较函数(非必填));</p>
+<p>​    如果不写比较函数，默认按照递增排序。</p>
+<p>​    如何实现cmp函数：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmp</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line"><span class="keyword">return</span> a&gt;b; <span class="comment">//可以理解为当a&gt;b时把a放在b前面</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>qt学习记录2</title>
     <url>/2021/08/24/qt-2/</url>
     <content><![CDATA[<p>1.QMainWindow</p>
