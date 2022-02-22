@@ -2,9 +2,18 @@
 <search>
   <entry>
     <title>nvn</title>
-    <url>/2021/07/22/hello-world/</url>
+    <url>/2022/02/22/hello-world/</url>
     <content><![CDATA[<p>欢迎来到我的个人博客，这里会记录一些生活上遇到的问题和解决办法。希望对你有所启发^v^</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>vc</title>
+    <url>/2022/02/22/vc/</url>
+    <content><![CDATA[<p>addasdasd</p>
+]]></content>
+      <tags>
+        <tag>dd</tag>
+      </tags>
   </entry>
   <entry>
     <title>algorithm-1</title>
